@@ -25,3 +25,6 @@ using System.Text;
 //Console.WriteLine(BinaryConvertor.ConvertStringToBinary("hello"));
 
 
+
+Console.WriteLine(CaesarCipher.Encrypt("zoo"));
+Console.WriteLine(CaesarCipher.Decode("crr"));
