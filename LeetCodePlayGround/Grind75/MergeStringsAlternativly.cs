@@ -11,7 +11,7 @@ Return the merged string.*/
 
 
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class MergeStringsAlternativly
     {
@@ -60,26 +60,26 @@ namespace LeetCodePlayGround
 
 
 
-        //    int longestLength = 0;
-        //    string mergedString = string.Empty;
-        //    if (word1.Length >= word2.Length)
-        //        longestLength = word1.Length;
-        //    else
-        //        longestLength = word2.Length;
+            //    int longestLength = 0;
+            //    string mergedString = string.Empty;
+            //    if (word1.Length >= word2.Length)
+            //        longestLength = word1.Length;
+            //    else
+            //        longestLength = word2.Length;
 
-        //    for (int i = 0; i < longestLength; i++)
-        //    {
-        //        if (i % 2 == 0)
-        //        {
-        //            mergedString += word1[i];
-        //        }
-        //        else
-        //        {
-        //            mergedString += word2[i];
-        //        }
-        //    }
+            //    for (int i = 0; i < longestLength; i++)
+            //    {
+            //        if (i % 2 == 0)
+            //        {
+            //            mergedString += word1[i];
+            //        }
+            //        else
+            //        {
+            //            mergedString += word2[i];
+            //        }
+            //    }
 
-        //    return mergedString;
+            //    return mergedString;
         }
 
     }

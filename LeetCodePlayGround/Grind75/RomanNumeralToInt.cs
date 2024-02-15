@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class RomanNumeralToInt
     {
@@ -31,7 +31,7 @@ namespace LeetCodePlayGround
                                        .Replace("CD", "CCCC")
                                        .Replace("CM", "DCCCC");
 
-            foreach(char numeral in romanNumeral)
+            foreach (char numeral in romanNumeral)
             {
                 sum += romanNumeralChart[numeral.ToString()];
             }

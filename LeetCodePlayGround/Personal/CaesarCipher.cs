@@ -5,7 +5,7 @@ using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Personal
 {
     public class CaesarCipher
     {
@@ -24,10 +24,6 @@ namespace LeetCodePlayGround
             char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
             message = message.ToLower();
-
-            //z = 0 + 3, letterindex = 25 -25 = 0+3;
-            //y = 0 + 2, letterindex= 25 -24 = 1+ 
-            //x = 0 + 1
             for (int i = 0; i < message.Length; i++)
             {
                 int letterIndex = Array.IndexOf(alphabet, message[i]);
@@ -58,15 +54,17 @@ namespace LeetCodePlayGround
                 if (letterIndex - 3 < 0)
                 {
                     //int j = ;
-                    sb.Append(alphabet[26 + 3 - (26 - letterIndex)]);
+                    sb.Append(alphabet[26 + letterIndex - 3]);
                 }
                 else
                 {
                     sb.Append(alphabet[letterIndex - 3]);
                 }
             }
+
             return sb.ToString();
+
         }
-     }
-  } 
+    }
+}
 

@@ -24,7 +24,7 @@ Input: prices = [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.*/
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class BestTimeToBuyAndSellStocks
     {
@@ -35,7 +35,7 @@ namespace LeetCodePlayGround
             int bestSell = 0;
             //this variable will hold the potential best but time I.E. Min value which starts out at index 0 of the prices array
             int bestBuy = prices[0];
-  
+
             // loop over the entire array starting at the second position: i = 1; 
             for (int i = 1; i < prices.Length; i++)
             {
@@ -45,7 +45,7 @@ namespace LeetCodePlayGround
                     bestBuy = prices[i];
                 }
                 // if the current index - the best buy variable is greater than the current best sell variable I.E more profit. Set the new best sell = to price[i - the current best buy
-                else if ((prices[i] - bestBuy) > bestSell)
+                else if (prices[i] - bestBuy > bestSell)
                 {
                     bestSell = prices[i] - bestBuy;
                 }

@@ -1,6 +1,6 @@
-using LeetCodePlayGround;
+using LeetCodePlayGround.Personal;
 
-namespace LeetCodePlaygroundTests
+namespace LeetCodePlaygroundTests.PersonalTests
 {
     public class BinaryConvertorTests
     {
@@ -8,7 +8,7 @@ namespace LeetCodePlaygroundTests
         //Act
         //Assert
 
- 
+
 
         [Fact]
         public void BinaryConverter_ConvertNumberToBinary_Test1()

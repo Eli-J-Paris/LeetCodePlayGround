@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class RansomNote
     {
@@ -17,7 +17,7 @@ namespace LeetCodePlayGround
         {
             List<char> ransomCharList = ransomNote.ToList();
 
-            foreach(var c in magazine)
+            foreach (var c in magazine)
             {
                 if (ransomCharList.Contains(c))
                 {

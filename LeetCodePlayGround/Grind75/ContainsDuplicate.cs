@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class ContainsDuplicate
     {
@@ -13,8 +13,8 @@ namespace LeetCodePlayGround
         public static bool ArrayContainsDuplicate(int[] nums)
         {
             Array.Sort(nums);
-            int j = nums.Length +1;
-            for (int i = 0; i < nums.Length -1; i++)
+            int j = nums.Length + 1;
+            for (int i = 0; i < nums.Length - 1; i++)
             {
                 if (i == j) return false;
 

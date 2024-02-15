@@ -24,7 +24,28 @@ using System.Text;
 
 //Console.WriteLine(BinaryConvertor.ConvertStringToBinary("hello"));
 
+//Console.WriteLine(CaesarCipher.Encrypt("zyx"));
+//Console.WriteLine(CaesarCipher.Decode("cba"));
+
+//MoveZeros.MoveZerosSolution([1, 0, 2, 6, 7, 0, 3]);
 
 
-Console.WriteLine(CaesarCipher.Encrypt("zoo"));
-Console.WriteLine(CaesarCipher.Decode("crr"));
+Console.WriteLine(Sum(new[] { 6, 1, 2, 8, 10 }));
+ static int Sum(int[] numbers)
+{
+    if (numbers == null||numbers.Length <= 1) return 0;
+    int sum = 0;
+    Array.Sort(numbers);
+    
+    for (int i = 0; i < numbers.Length - 1; i++)
+    {
+        if (i != 0)
+        {
+            sum += numbers[i];
+        }
+    }
+    return sum;
+}
+
+//List<int> queries = new List<int> { 0, 2 };
+//FindDuplicateCharactersFromInts.Solution("hello", queries);

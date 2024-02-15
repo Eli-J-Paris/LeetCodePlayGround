@@ -28,7 +28,7 @@ Example 3:
 
 Input: s = "(]"
 Output: false*/
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class ValidParentheses
     {
@@ -42,10 +42,10 @@ namespace LeetCodePlayGround
             Stack<char> stack = new Stack<char>();
 
             //loop over each character in the incoming string
-            foreach(var character in s)
+            foreach (var character in s)
             {
                 //if the character is (, {, [ push(Add) it to the top of the stack
-                if(character =='(' || character == '{' || character == '[')
+                if (character == '(' || character == '{' || character == '[')
                 {
                     stack.Push(character);
                 }
@@ -54,7 +54,7 @@ namespace LeetCodePlayGround
                 {
                     //handels stack.empty exception e.g. the incoming string is "){". ) isn't added to the empty stack so when stack.Peek() is run the code breaks because the stack is empty
                     if (stack.Count == 0) return false;
-                    
+
                     //stack.Peek() checks the top of the stack and if the parentheses match pop off the top parenthese
                     if (stack.Peek() == '(' && character == ')' || stack.Peek() == '{' && character == '}' || stack.Peek() == '[' && character == ']')
                     {
@@ -72,7 +72,7 @@ namespace LeetCodePlayGround
             //Insures that the stack must be empty for the string to be valid. Without it string like: "((" would slip by because the first if statment inside the for loop is hit twice and misses the else
             if (stack.Count != 0)
                 return false;
-           //if we get this far the string is valid.
+            //if we get this far the string is valid.
             else
                 return true;
 

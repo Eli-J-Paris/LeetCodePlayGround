@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class ValidAnagram
     {
@@ -17,7 +17,7 @@ namespace LeetCodePlayGround
 
             List<char> listOfChars = potentialAnagram.ToList();
 
-            foreach(var character in anagram)
+            foreach (var character in anagram)
             {
                 if (listOfChars.Contains(character))
                 {
@@ -37,8 +37,8 @@ namespace LeetCodePlayGround
                 return false;
 
 
-            string sortedAnagram = String.Concat(anagram.OrderBy(c => c));
-            string sortedPotentialAnagram = String.Concat(potentialAnagram.OrderBy(c => c));
+            string sortedAnagram = string.Concat(anagram.OrderBy(c => c));
+            string sortedPotentialAnagram = string.Concat(potentialAnagram.OrderBy(c => c));
 
             //Console.WriteLine(sortedAnagram);
             //Console.WriteLine(sortedPotentialAnagram);

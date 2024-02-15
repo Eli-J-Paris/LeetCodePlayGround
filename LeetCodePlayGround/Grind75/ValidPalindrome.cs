@@ -27,7 +27,7 @@ Output: true
 Explanation: s is an empty string "" after removing non-alphanumeric characters.
 Since an empty string reads the same forward and backward, it is a palindrome.*/
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class ValidPalindrome
     {
@@ -37,7 +37,7 @@ namespace LeetCodePlayGround
         //reverse that array
         //turn that array back into a string
         //compare if the strings are the same if yes return true if not return false
-        
+
         /// <summary>
         /// checks if a string is a palindrome sweeeeeet
         /// </summary>
@@ -47,7 +47,7 @@ namespace LeetCodePlayGround
         {
             string newString = "";
 
-            foreach(var character in s)
+            foreach (var character in s)
             {
                 if (char.IsLetterOrDigit(character))
                 {
@@ -59,14 +59,14 @@ namespace LeetCodePlayGround
 
             char[] charArray = newString.ToArray();
             Array.Reverse(charArray);
-            string reversedString = string.Join("",charArray);
+            string reversedString = string.Join("", charArray);
 
             Console.WriteLine("NS: " + newString);
             Console.WriteLine($"RS: {reversedString}");
             if (newString == reversedString)
                 return true;
             else
-                return false;        
+                return false;
         }
     }
 }

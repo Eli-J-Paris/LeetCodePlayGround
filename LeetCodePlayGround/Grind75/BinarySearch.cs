@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Grind75
 {
     public class BinarySearch
     {
@@ -27,7 +27,7 @@ namespace LeetCodePlayGround
             int max = nums.Length - 1;
 
 
-            while(min <= max)
+            while (min <= max)
             {
                 int mid = (min + max) / 2;
                 Console.WriteLine(mid);

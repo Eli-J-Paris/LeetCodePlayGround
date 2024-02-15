@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.Personal
 {       //Math.Pow()
     public class BinaryConvertor
     {
@@ -23,12 +23,12 @@ namespace LeetCodePlayGround
             double quotient;
 
             //Run while num is greater than zero. loop will always reach zero on its own unless num is 0 hence the above if statement
-            while(num > 0)
+            while (num > 0)
             {
                 //getting the quotient as a double !important
                 quotient = (double)num / 2;
                 //checking if quotient has a remainder
-                if(quotient > num / 2)
+                if (quotient > num / 2)
                 {
                     //Addding 1 to the front of the string if quotient does have a remainder
                     binaryString = "1" + binaryString;
@@ -36,7 +36,7 @@ namespace LeetCodePlayGround
                     num = (int)quotient;
                 }
                 //could replace with else, but is asking if quotient DOES NOT have a remainder
-                else if(quotient == num / 2)
+                else if (quotient == num / 2)
                 {
                     //adding 0 to front of the string
                     binaryString = "0" + binaryString;
@@ -83,12 +83,12 @@ namespace LeetCodePlayGround
             StringBuilder sb = new StringBuilder();
             List<int> asciiNums = new List<int>();
 
-            foreach(char c in s)
+            foreach (char c in s)
             {
                 asciiNums.Add(ConvertCharToASCII(c));
             }
 
-            foreach(var num in asciiNums)
+            foreach (var num in asciiNums)
             {
                 string binaryNum = ConvertNumberToBinary(num);
                 sb.Append(binaryNum + " ");

@@ -26,4 +26,8 @@
     <ProjectReference Include="..\LeetCodePlayGround\LeetCodePlayGround.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Grind75Tests\" />
+  </ItemGroup>
+
 </Project>
