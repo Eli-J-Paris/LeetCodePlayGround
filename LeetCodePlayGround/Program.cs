@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LeetCodePlayGround;
+using LeetCodePlayGround.CodeWars;
 using System.Text;
 
 //Console.WriteLine(ValidParentheses.IsValidParentheses("([)]"));
@@ -30,22 +31,24 @@ using System.Text;
 //MoveZeros.MoveZerosSolution([1, 0, 2, 6, 7, 0, 3]);
 
 
-Console.WriteLine(Sum(new[] { 6, 1, 2, 8, 10 }));
- static int Sum(int[] numbers)
-{
-    if (numbers == null||numbers.Length <= 1) return 0;
-    int sum = 0;
-    Array.Sort(numbers);
+//Console.WriteLine(Sum(new[] { 6, 1, 2, 8, 10 }));
+// static int Sum(int[] numbers)
+//{
+//    if (numbers == null||numbers.Length <= 1) return 0;
+//    int sum = 0;
+//    Array.Sort(numbers);
     
-    for (int i = 0; i < numbers.Length - 1; i++)
-    {
-        if (i != 0)
-        {
-            sum += numbers[i];
-        }
-    }
-    return sum;
-}
+//    for (int i = 0; i < numbers.Length - 1; i++)
+//    {
+//        if (i != 0)
+//        {
+//            sum += numbers[i];
+//        }
+//    }
+//    return sum;
+//}
 
+
+int r = SumMixedArray.SumMix([1,2,"3"]);
 //List<int> queries = new List<int> { 0, 2 };
 //FindDuplicateCharactersFromInts.Solution("hello", queries);
