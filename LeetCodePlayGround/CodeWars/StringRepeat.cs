@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 
 
-namespace LeetCodePlayGround
+namespace LeetCodePlayGround.CodeWars
 {
     public class StringRepeat
     {
