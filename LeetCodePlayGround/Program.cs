@@ -37,7 +37,7 @@ using System.Text;
 //    if (numbers == null||numbers.Length <= 1) return 0;
 //    int sum = 0;
 //    Array.Sort(numbers);
-    
+
 //    for (int i = 0; i < numbers.Length - 1; i++)
 //    {
 //        if (i != 0)
@@ -49,6 +49,20 @@ using System.Text;
 //}
 
 
-int r = SumMixedArray.SumMix([1,2,"3"]);
+//int r = SumMixedArray.SumMix([1,2,"3"]);
 //List<int> queries = new List<int> { 0, 2 };
 //FindDuplicateCharactersFromInts.Solution("hello", queries);
+
+
+
+
+int[] nums = [1, 2, 3, 4];
+
+
+//int sum =1;
+//foreach (var num in nums)
+//{
+//    sum *= num;
+//}
+//return x.Aggregate((sum, val) => sum * val);
+//Console.WriteLine(sum);
