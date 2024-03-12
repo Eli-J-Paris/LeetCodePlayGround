@@ -2,6 +2,23 @@
 using LeetCodePlayGround;
 using LeetCodePlayGround.CodeWars;
 using System.Text;
+using System.Xml.Linq;
+using System.Collections.Generic;
+Console.WriteLine("hello world");
+
+
+int[] numarry = [1, 2, 0, 0, 3, 0, 4, 5];
+
+int[] result = MoveZerosToEnd.MoveZeros(numarry);
+
+foreach(var num in result)
+{
+    Console.WriteLine(num);
+}
+
+
+
+
 
 //Console.WriteLine(ValidParentheses.IsValidParentheses("([)]"));
 
@@ -56,7 +73,7 @@ using System.Text;
 
 
 
-int[] nums = [1, 2, 3, 4];
+
 
 
 //int sum =1;
